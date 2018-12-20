@@ -5,7 +5,7 @@ import org.osgi.framework.BundleContext;
 
 import com.dscsag.plm.spi.interfaces.gui.PluginContext;
 
-import osgi.context.ExamplePluginContext;
+import osgi.context.MagicEyesPluginContext;
 
 /**
  * Activator to register provided services
@@ -17,7 +17,7 @@ public class Activator implements BundleActivator
   public void start(BundleContext context) throws Exception
   {
     // then register our service, which "enhances" the ECTR file handling
-    context.registerService(PluginContext.class, new ExamplePluginContext(), null);
+    context.registerService(PluginContext.class, new MagicEyesPluginContext(), null);
   }
 
   @Override
